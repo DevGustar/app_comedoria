@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Comedoria Da Tia</string>
+    <string name="LogoComedoria">Logo da Comedoria Da Tia</string>
+    <string name="HintRA">Digite seu RA</string>
+    <string name="HintSenha">Digite sua senha</string>
+    <string name="BotaoComecar">Começar</string>
+</resources>
