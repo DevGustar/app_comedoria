@@ -1,7 +1,17 @@
 <resources>
     <string name="app_name">Comedoria Da Tia</string>
     <string name="LogoComedoria">Logo da Comedoria Da Tia</string>
-    <string name="HintRA">Digite seu RA</string>
-    <string name="HintSenha">Digite sua senha</string>
+    <string name="JaPossuiConta">Já possui uma conta?</string>
+    <string name="Entrar">Entrar</string>
+    <string name="NaoPossuiConta">Não possui uma conta?</string>
+    <string name="Criar">Criar</string>
+    <string name="HintNome">Nome</string>
+    <string name="HintRA">RA</string>
+    <string name="HintTelefone">Telefone</string>
+    <string name="HintEmail">E-mail</string>
+    <string name="HintSenha">Senha</string>
+    <string name="HintConfirmarSenha">Confirme sua Senha</string>
     <string name="BotaoComecar">Começar</string>
+    <string name="BotaoCadastro">Cadastrar</string>
+    <string name="BoasVindas">Olá! Bem vindo(a) ao meu App.</string>
 </resources>

@@ -7,7 +7,7 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class SplashComedoria extends AppCompatActivity {
+public class SplashComedoriaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,10 +15,10 @@ public class SplashComedoria extends AppCompatActivity {
         setContentView(R.layout.activity_splash_comedoria);
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(SplashComedoria.this, SignUp.class);
+            Intent intent = new Intent(SplashComedoriaActivity.this, SignUpActivity.class);
             startActivity(intent);
             finish();
-        }, 3000);
+        }, 1000);
 
     }
 }

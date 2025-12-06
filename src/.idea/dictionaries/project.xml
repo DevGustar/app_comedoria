@@ -2,10 +2,25 @@
   <dictionary name="project">
     <words>
       <w>botao</w>
+      <w>cadastrar</w>
+      <w>cadastro</w>
+      <w>celular</w>
       <w>comecar</w>
       <w>comedoria</w>
+      <w>confirmar</w>
+      <w>confirme</w>
+      <w>conta</w>
+      <w>criar</w>
+      <w>darkgreen</w>
       <w>digite</w>
+      <w>entrar</w>
+      <w>lightgreen</w>
+      <w>possui</w>
       <w>senha</w>
+      <w>telefone</w>
+      <w>texto</w>
+      <w>vindas</w>
+      <w>vindo</w>
     </words>
   </dictionary>
 </component>

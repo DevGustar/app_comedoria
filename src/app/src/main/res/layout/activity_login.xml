@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgreen"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logoComedoria"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:contentDescription="@string/LogoComedoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_comedoria_da_tia" />
+
+    <EditText
+        android:id="@+id/editTextRA"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:autofillHints=""
+        android:background="@drawable/custom_edittext"
+        android:gravity="center_vertical"
+        android:hint="@string/HintRA"
+        android:inputType="numberDecimal"
+        android:maxLength="8"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoComedoria"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/custom_edittext"
+        android:gravity="center_vertical"
+        android:hint="@string/HintSenha"
+        android:inputType="textPassword"
+        android:maxLength="8"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRA"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvNaoPossuiConta"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/NaoPossuiConta"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="@id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword"/>
+
+    <TextView
+        android:id="@+id/tvCriar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/Criar"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintStart_toEndOf="@id/tvNaoPossuiConta"
+        app:layout_constraintTop_toTopOf="@id/tvNaoPossuiConta"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/lightgreen"
+        android:text="@string/BotaoComecar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNaoPossuiConta"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
