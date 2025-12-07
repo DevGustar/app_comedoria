@@ -14,7 +14,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:contentDescription="@string/userLogo"
-        android:src="@drawable/ic_baseline_person_white_24" />
+        android:src="@drawable/ic_usuario_branco" />
 
     <TextView
         android:id="@+id/textUserName"
