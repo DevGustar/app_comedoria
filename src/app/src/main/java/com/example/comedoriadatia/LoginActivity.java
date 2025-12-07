@@ -7,11 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 
@@ -40,19 +36,11 @@ public class LoginActivity extends AppCompatActivity {
             {
                 if (!password.isEmpty())
                 {
-                    auth.signInWithEmailAndPassword(email, password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                        @Override
-                        public void onSuccess(AuthResult authResult) {
-                            Toast.makeText(LoginActivity.this, "Login realizado", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(LoginActivity.this, MainActivity.class));
-                            finish();
-                        }
-                    }).addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(LoginActivity.this, "Login falhou", Toast.LENGTH_SHORT).show();
-                        }
-                    });
+                    auth.signInWithEmailAndPassword(email, password).addOnSuccessListener(authResult -> {
+                        Toast.makeText(LoginActivity.this, "Login realizado", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                        finish();
+                    }).addOnFailureListener(e -> Toast.makeText(LoginActivity.this, "Login falhou", Toast.LENGTH_SHORT).show());
                 }
                 else
                 {
