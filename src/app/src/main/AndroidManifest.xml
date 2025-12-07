@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComedoriaDaTia">
         <activity
+            android:name=".PasswordRecovery"
+            android:exported="false" />
+        <activity
+            android:name=".ResetEmailActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity

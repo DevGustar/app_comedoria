@@ -19,15 +19,18 @@
         app:srcCompat="@drawable/logo_comedoria_da_tia" />
 
     <EditText
-        android:id="@+id/editTextRA"
+        android:id="@+id/editTextEmail"
         android:layout_width="300dp"
         android:layout_height="56dp"
+        android:layout_marginTop="16dp"
         android:autofillHints=""
         android:background="@drawable/custom_edittext"
         android:gravity="center_vertical"
-        android:hint="@string/HintRA"
-        android:inputType="numberDecimal"
-        android:maxLength="8"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="6dp"
+        android:hint="@string/HintEmail"
+        android:inputType="textEmailAddress"
+        android:maxLength="100"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         android:textColor="@color/black"
@@ -45,16 +48,18 @@
         android:autofillHints=""
         android:background="@drawable/custom_edittext"
         android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="6dp"
         android:hint="@string/HintSenha"
         android:inputType="textPassword"
-        android:maxLength="8"
+        android:maxLength="100"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRA"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
         tools:ignore="TextContrastCheck" />
 
     <TextView
@@ -70,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@id/editTextPassword"/>
 
     <TextView
-        android:id="@+id/tvCriar"
+        android:id="@+id/signupRedirectText"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:gravity="center_horizontal|center_vertical"
@@ -82,6 +87,31 @@
         android:paddingEnd="5dp"
         app:layout_constraintStart_toEndOf="@id/tvNaoPossuiConta"
         app:layout_constraintTop_toTopOf="@id/tvNaoPossuiConta"/>
+
+    <TextView
+        android:id="@+id/tvEsqueceuSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/EsqueceuSenha"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/tvNaoPossuiConta"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"/>
+
+    <TextView
+        android:id="@+id/tvRecuperacaoSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/Recuperar"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintStart_toEndOf="@id/tvEsqueceuSenha"
+        app:layout_constraintTop_toTopOf="@id/tvEsqueceuSenha"/>
 
     <Button
         android:id="@+id/btnLogin"

@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/darkgreen">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/darkgreen"
     tools:context=".SignUpActivity">
 
     <ImageView
         android:id="@+id/logoComedoria"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:contentDescription="@string/LogoComedoria"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,17 +32,18 @@
         android:autofillHints=""
         android:background="@drawable/custom_edittext"
         android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="6dp"
         android:hint="@string/HintNome"
         android:inputType="textPersonName"
         android:maxLength="100"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
-        android:layout_marginTop="175dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoComedoria"
         tools:ignore="TextContrastCheck" />
 
     <EditText
@@ -46,6 +54,8 @@
         android:autofillHints=""
         android:background="@drawable/custom_edittext"
         android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_baseline_badge_24"
+        android:drawablePadding="6dp"
         android:hint="@string/HintRA"
         android:inputType="number"
         android:maxLength="8"
@@ -66,6 +76,8 @@
         android:autofillHints=""
         android:background="@drawable/custom_edittext"
         android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="6dp"
         android:hint="@string/HintTelefone"
         android:inputType="phone"
         android:maxLength="11"
@@ -86,6 +98,8 @@
         android:autofillHints=""
         android:background="@drawable/custom_edittext"
         android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="6dp"
         android:hint="@string/HintEmail"
         android:inputType="textEmailAddress"
         android:maxLength="100"
@@ -106,6 +120,8 @@
         android:autofillHints=""
         android:background="@drawable/custom_edittext"
         android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="6dp"
         android:hint="@string/HintSenha"
         android:inputType="textPassword"
         android:maxLength="100"
@@ -126,6 +142,8 @@
         android:autofillHints=""
         android:background="@drawable/custom_edittext"
         android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="6dp"
         android:hint="@string/HintConfirmarSenha"
         android:inputType="textPassword"
         android:maxLength="100"
@@ -151,7 +169,7 @@
         app:layout_constraintTop_toBottomOf="@id/editTextConfirmPassword"/>
 
     <TextView
-        android:id="@+id/tvEntrar"
+        android:id="@+id/loginRedirectText"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:gravity="center_horizontal|center_vertical"
@@ -177,3 +195,5 @@
         tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

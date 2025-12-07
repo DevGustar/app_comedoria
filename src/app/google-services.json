@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "70224558736",
+    "project_id": "comedoria-da-tia-fecap",
+    "storage_bucket": "comedoria-da-tia-fecap.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70224558736:android:070fd80b00ec7552c1f615",
+        "android_client_info": {
+          "package_name": "com.example.comedoriadatia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFevBZQCXZ93YchmYYNbcHZRX9SiQB9nk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

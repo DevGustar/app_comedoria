@@ -5,6 +5,9 @@
     <string name="Entrar">Entrar</string>
     <string name="NaoPossuiConta">Não possui uma conta?</string>
     <string name="Criar">Criar</string>
+    <string name="EsqueceuSenha">Esqueceu sua senha?</string>
+    <string name="Recuperar">Recuperar</string>
+    <string name="RecuperacaoSenha">Recuperação de Senha</string>
     <string name="HintNome">Nome</string>
     <string name="HintRA">RA</string>
     <string name="HintTelefone">Telefone</string>
@@ -14,4 +17,5 @@
     <string name="BotaoComecar">Começar</string>
     <string name="BotaoCadastro">Cadastrar</string>
     <string name="BoasVindas">Olá! Bem vindo(a) ao meu App.</string>
+    <string name="IconeVoltar">Ícone para voltar a tela anterior</string>
 </resources>
