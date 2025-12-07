@@ -18,4 +18,14 @@
     <string name="BotaoCadastro">Cadastrar</string>
     <string name="BoasVindas">Olá! Bem vindo(a) ao meu App.</string>
     <string name="IconeVoltar">Ícone para voltar a tela anterior</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="userLogo">Logo do usuário</string>
+    <string name="userName">Nome do usuário</string>
+    <string name="userContact">usercontact@gmail.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="AboutFragment">About Fragment</string>
+    <string name="HomeFragment">Home Fragment</string>
+    <string name="SettingsFragment">Settings Fragment</string>
+    <string name="ShareFragment">Share Fragment</string>
 </resources>
