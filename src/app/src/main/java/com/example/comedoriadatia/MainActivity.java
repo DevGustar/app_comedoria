@@ -3,6 +3,8 @@ package com.example.comedoriadatia;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
@@ -13,6 +15,8 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -29,6 +33,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        View headerView = navigationView.getHeaderView(0);
+
+        TextView headerUserName = headerView.findViewById(R.id.textUserName);
+        TextView headerUserEmail = headerView.findViewById(R.id.textUserEmail);
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        if (user != null) {
+            String uid = user.getUid();
+
+            FirebaseFirestore.getInstance()
+                    .collection("users")
+                    .document(uid)
+                    .get()
+                    .addOnSuccessListener(document -> {
+                        if (document.exists()) {
+                            String nome = document.getString("nome");
+                            String email = document.getString("email");
+
+                            headerUserName.setText(nome);
+                            headerUserEmail.setText(email);
+                        }
+                    })
+                    .addOnFailureListener(e -> {
+                        headerUserName.setText("");
+                        headerUserEmail.setText("");
+                    });
+        }
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this,

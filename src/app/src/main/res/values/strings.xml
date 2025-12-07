@@ -28,4 +28,5 @@
     <string name="HomeFragment">Home Fragment</string>
     <string name="SettingsFragment">Settings Fragment</string>
     <string name="ShareFragment">Share Fragment</string>
+    <string name="Erro">Erro</string>
 </resources>
